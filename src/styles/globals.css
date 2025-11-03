@@ -1,0 +1,71 @@
+:root {
+  --bg: #f8fafc;
+  --card: #fff;
+  --accent: #3b82f6;
+  --text: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1080px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.card {
+  background: var(--card);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+  padding: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 18px;
+  align-items: start;
+}
+
+/* Timer styling */
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+}
+.timer .time {
+  font-size: 48px;
+  font-weight: 700;
+}
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.btn.secondary {
+  background: #e5e7eb;
+  color: var(--text);
+}
